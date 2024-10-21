@@ -12,7 +12,7 @@ body {
 
 header {
   background-color: #0d0b35;
-  padding: 20px 5%; /* Menggunakan persen untuk responsivitas */
+  padding: 20px 5%;
   display: flex;
   align-items: center;
 }
@@ -20,11 +20,10 @@ header {
 header .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
 }
 
 header nav {
-  margin-left: auto; /* Menggeser navbar ke kanan sepenuhnya */
+  margin-left: auto;
 }
 
 header nav ul {
@@ -40,7 +39,7 @@ header nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 header nav ul li a:hover {
@@ -51,7 +50,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 5%; /* Menggunakan persen untuk responsivitas */
+  padding: 100px 5%;
   background-color: #120d42;
 }
 
@@ -61,15 +60,12 @@ header nav ul li a:hover {
 
 .hero-text h1 {
   font-size: 50px;
-  font-weight: bold;
   margin-bottom: 20px;
-  line-height: 1.2;
 }
 
 .hero-text p {
   font-size: 18px;
   margin-bottom: 30px;
-  line-height: 1.6;
 }
 
 .cta-button {
@@ -79,7 +75,7 @@ header nav ul li a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -88,16 +84,15 @@ header nav ul li a:hover {
 
 .hero-image img {
   max-width: 100%;
-  height: auto; /* Menjaga proporsi gambar */
+  height: auto;
 }
 
-.prodi {
+.masalah {
   background-color: #0d0b35;
-  color: white;
-  padding: 80px 5%; /* Menggunakan persen untuk responsivitas */
+  padding: 80px 5%;
 }
 
-.prodi-container {
+.masalah-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,33 +100,32 @@ header nav ul li a:hover {
   margin: 0 auto;
 }
 
-.prodi-image img {
+.masalah-image img {
   max-width: 100%;
   height: auto;
 }
 
-.prodi-content {
-  max-width: 50%; /* Membatasi lebar konten prodi */
+.masalah-content {
+  max-width: 50%;
   padding-left: 50px;
 }
 
-.prodi-content h2 {
+.masalah-content h2 {
   font-size: 36px;
-  color: #ffffff;
   margin-bottom: 20px;
 }
 
-.prodi-content h2 span {
+.masalah-content h2 span {
   color: #00b4ff;
 }
 
-.prodi-content p:first-of-type {
+.masalah-content p:first-of-type {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.prodi-content p {
+.masalah-content p {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
@@ -144,45 +138,44 @@ header nav ul li a:hover {
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .read-more:hover {
   background-color: #0080cc;
 }
 
-/* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
   header nav ul {
-    flex-direction: column; /* Mengubah menjadi kolom pada layar kecil */
-    align-items: flex-start; /* Menempatkan elemen di kiri */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   header nav ul li {
-    margin-left: 0; /* Menghilangkan margin */
-    margin-top: 10px; /* Menambahkan margin atas */
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .hero {
-    flex-direction: column; /* Mengubah menjadi kolom untuk layar kecil */
-    padding: 60px 5%; /* Mengurangi padding */
+    flex-direction: column;
+    padding: 60px 5%;
   }
 
   .hero-text h1 {
-    font-size: 30px; /* Mengurangi ukuran font */
+    font-size: 30px;
   }
 
   .hero-text p {
-    font-size: 16px; /* Mengurangi ukuran font */
+    font-size: 16px;
   }
 
-  .prodi-container {
-    flex-direction: column; /* Mengubah menjadi kolom untuk layar kecil */
-    align-items: center; /* Menempatkan konten di tengah */
+  .masalah-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .prodi-content {
-    padding-left: 0; /* Menghilangkan padding pada layar kecil */
-    max-width: 90%; /* Mengurangi lebar maksimum */
+  .masalah-content {
+    padding-left: 0;
+    max-width: 90%;
   }
 }
