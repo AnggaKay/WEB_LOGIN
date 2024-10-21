@@ -11,6 +11,7 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Polinela</title>
     <link rel="stylesheet" href="dasboard.css">
 </head>
@@ -28,6 +29,7 @@ if (!isset($_SESSION['username'])) {
 
     <section class="hero">
         <div class="hero-text">
+            <p>HALLO, <?php echo ($_SESSION['username']); ?>!</p>
             <h1>POLITEKNIK NEGERI LAMPUNG</h1>
             <p>Politeknik Negeri Lampung adalah Perguruan Tinggi Negeri yang menyelenggarakan pendidikan vokasi di Provinsi Lampung
                untuk menciptakan lulusan ahli madya dan sarjana terapan berjiwa disiplin, 
